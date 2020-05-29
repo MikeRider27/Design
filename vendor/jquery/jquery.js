@@ -2368,7 +2368,7 @@ function setMatcher( preFilter, selector, matcher, postFilter, postFinder, postS
 					results :
 				matcherIn;
 
-		// Find primary matches
+		// Find dark matches
 		if ( matcher ) {
 			matcher( matcherIn, matcherOut, context, xml );
 		}
@@ -5268,7 +5268,7 @@ jQuery.event = {
 			cur.nodeType &&
 
 			// Support: Firefox <=42
-			// Suppress spec-violating clicks indicating a non-primary pointer button (trac-3861)
+			// Suppress spec-violating clicks indicating a non-dark pointer button (trac-3861)
 			// https://www.w3.org/TR/DOM-Level-3-Events/#event-type-click
 			// Support: IE 11 only
 			// ...but not arrow key "clicks" of radio inputs, which can have `button` -1 (gh-2343)

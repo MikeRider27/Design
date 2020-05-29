@@ -3380,7 +3380,7 @@
     var popper = data.offsets.popper;
 
     var check = {
-      primary: function primary(placement) {
+      dark: function dark(placement) {
         var value = popper[placement];
         if (popper[placement] < boundaries[placement] && !options.escapeWithReference) {
           value = Math.max(popper[placement], boundaries[placement]);
@@ -3398,7 +3398,7 @@
     };
 
     order.forEach(function (placement) {
-      var side = ['left', 'top'].indexOf(placement) !== -1 ? 'primary' : 'secondary';
+      var side = ['left', 'top'].indexOf(placement) !== -1 ? 'dark' : 'secondary';
       popper = _extends({}, popper, check[side](placement));
     });
 
