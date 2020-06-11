@@ -1,39 +1,39 @@
-<!DOCTYPE html>
-<html lang="en">
+<html lang="es"><head><style>.gm-style-pbc{transition:opacity ease-in-out;background-color:rgba(0,0,0,0.45);text-align:center}.gm-style-pbt{font-size:22px;color:white;font-family:Roboto,Arial,sans-serif;position:relative;margin:0;top:50%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%)}
+</style><style>.gm-style img{max-width: none;}.gm-style {font: 400 11px Roboto, Arial, sans-serif; text-decoration: none;}</style>
 
-<head>
-
-  <meta charset="utf-8">
+  <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>SHOWME</title>
+  <link rel="icon" type="image/png" href="./public/img/logoIcono.png">
+  <title>SHOWME - MSPBS</title>
 
   <!-- Custom fonts for this template-->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
   <!-- Custom styles for this template-->
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css" rel="stylesheet">
   <link href="css/sb-admin-2.min.css" rel="stylesheet">
   <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="public/css/bootstrap.min.css ">
+  <link rel="stylesheet" type="text/css" href="public/css/estilo.css">
  
 
-</head>
+<script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/41/3a/intl/es_419/common.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/41/3a/intl/es_419/util.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/41/3a/intl/es_419/map.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/41/3a/intl/es_419/marker.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/41/3a/intl/es_419/onion.js"></script></head>
 
 <body id="page-top">
 
-  <!-- Page Wrapper -->
-  <div id="wrapper">
 
     <!-- Sidebar -->
       <ul class="navbar-nav bg-gradient-dark sidebar sidebar-dark accordion" id="accordionSidebar">
 
             <!-- Sidebar - Brand -->
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
-              <div class="sidebar-brand-icon rotate-n-30" >
-                <i class="fas fa-dice-d6  fa-spin" ></i>
+              <div class="sidebar-brand-icon rotate-n-30">
+                <i class="fas fa-dice-d6  fa-spin"></i>
               </div>
               <div class="sidebar-brand-text mx-3" style="font-size:17  0%">SHOWME </div>
             </a>
@@ -43,7 +43,7 @@
 
               <!-- Nav Item - Dashboard -->
             <li class="nav-item active">
-              <a class="nav-link" href="index.html">
+              <a class="nav-link" href="home.php">
                 <i class="fas fa-tv" style="font-size:90%"></i>
                 <span style="font-size:90%">Inicio</span>
               </a>
@@ -52,10 +52,8 @@
                <!-- Divider -->
                <hr class="sidebar-divider" style="font-size:90%">
 
-           
-              <!-- Nav Item - Dashboard -->
-            <li class="nav-item ">
-              <a class="nav-link" href="charts.html">
+                          <li class="nav-item ">
+              <a class="nav-link" href="./listadousuario.php">
                 
                 <i class="fas fa-user-md" style="font-size:130%"></i>
                 <span style="font-size:90%">Usuario</span>
@@ -69,182 +67,540 @@
 
                 <!-- Nav Item - Dashboard -->
             <li class="nav-item ">
-              <a class="nav-link" href="tables.html">
+              <a class="nav-link" href="./buscador.php">
                 <i class="far fa-folder-open" style="font-size:130%"></i>
                 <span style="font-size:90%">Pacientes</span>
               </a>
             </li>
-
-                <!-- Divider -->
-                <hr class="sidebar-divider" style="font-size:90%">
+            <!-- Divider -->
+           
+            <hr class="sidebar-divider" style="font-size:90%">
+            <!-- inicio de boton temporal -->
+            <li class="nav-item ">
+              <a class="nav-link" href="./listadoprueba3.php">
+              <i class="far fa-folder-open" style="font-size:130%"></i>
+              <span style="font-size:90%">boton Temporal </span>
+              </a>
+            </li>
+            <hr class="sidebar-divider" style="font-size:90%">
+            <!-- fin de boton temporal-->
+              <!-- inicio de boton temporal -->
+              <li class="nav-item ">
+              <a class="nav-link" href="./listadob.php">
+              <i class="far fa-folder-open" style="font-size:130%"></i>
+              <span style="font-size:90%">boton Temporal 2</span>
+              </a>
+            </li>
+            <hr class="sidebar-divider" style="font-size:90%">
+            <!-- fin de boton temporal-->
+<li class="nav-item ">
+              <a class="nav-link" href="./salir.php">
+                <i class="fas fa-sign-out-alt" style="font-size:130%"></i>
+                <span style="font-size:90%">Salir</span>
+              </a>
+            </li>
     
-               <!-- Sidebar Toggler (Sidebar) -->
+
+
+            
+        <!-- Sidebar Toggler (Sidebar) -->
                <div class="text-center d-none d-md-inline">
                  <button class="rounded-circle border-0" id="sidebarToggle"></button>
                </div>
+        
 
-      </ul>
+    </ul>
     <!-- End of Sidebar -->
 
     <!-- Content Wrapper -->
     <div id="content-wrapper" class="d-flex flex-column">
-
       <!-- Main Content -->
-      <div id="content">
-
-        <!-- Topbar -->
-        <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
-
-          <!-- Sidebar Toggle (Topbar) -->
-          <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
-            <i class="fa fa-bars"></i>
-          </button>
-
-
-          <!-- Topbar Navbar -->
-          <ul class="navbar-nav ml-auto">
-
-            
-
-          
-
+        <div id="content">
+            <!-- Topbar -->
+           
+            <!-- End of Topbar -->
+            <!-- Begin Page Content -->
+            <div class="container-fluid">
+<!-- Page Heading -->
+<div class="container">
+    <div class="card o-hidden border-0 shadow-lg my-5">
+        <div class="card-body p-0">
+             <!-- Nested Row within Card Body -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="p-5">
+                        <div class="text-center">
+                            <h1 class="h4 text-gray-900 mb-4"> <strong>DATOS DE LAS PESTAÑAS</strong> </h1>
+                            <br>
      
+                        </div>
 
-            <div class="topbar-divider d-none d-sm-block"></div>
+                        <ul class="nav nav-tabs" role="tablist">
 
-            <!-- Nav Item - User Information -->
-            <li class="nav-item dropdown no-arrow">
-              <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Valerie Luna</span>
-              
-              </a>
-              <!-- Dropdown - User Information -->
-              <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
-                <a class="dropdown-item" href="#">
-                  <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
-                  Profile
-                </a>               
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
-                  <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
-                  Logout
-                </a>
-              </div>
-            </li>
-
-          </ul>
-
-        </nav>
-        <!-- End of Topbar -->
-
-        <!-- Begin Page Content -->
-        <div class="container-fluid">
-
-          <!-- Page Heading -->
-          <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
-            
-          </div>
-
-          <!-- Content Row -->
-          <div class="row">
-
-
-         
-
-          </div>
-
-          <!-- Content Row -->
-
-          <div class="row">
-
-            <!-- Area Chart -->
-            <div class="col-xl-10 col-lg-7">
-              <div class="card shadow mb-4">
-               
-                <!-- Card Body -->
-                <div class="card-body">
-                    <ul class="nav nav-tabs" role="tablist">
-
-                            <li role="presentation" class="active"><a href="#seccion1" aria-controls="" data-toggle="tab" role="tab">Datos Personales</a></li>
-                            <li role="presentation"><a href="#seccion2" aria-controls="" data-toggle="tab" role="tab">CallCenter 154</a></li>
-                            <li role="presentation"><a href="#seccion3" aria-controls="" data-toggle="tab" role="tab">Reporte de Salud</a></li>
+                            <li role="presentation" class=""><a href="#seccion1" aria-controls="" data-toggle="tab" role="tab" aria-expanded="false">Datos Personales</a></li>
+                            <li role="presentation" class=""><a href="#seccion2" aria-controls="" data-toggle="tab" role="tab" class="" aria-selected="false" aria-expanded="false">CallCenter 154</a></li>
+                            <li role="presentation" class="active"><a href="#seccion3" aria-controls="" data-toggle="tab" role="tab" class="active" aria-selected="true" aria-expanded="true">Reporte de Salud</a></li>
                             <li role="presentation"><a href="#seccion4" aria-controls="" data-toggle="tab" role="tab">Ubicacion</a></li>
                             <li role="presentation"><a href="#seccion5" aria-controls="" data-toggle="tab" role="tab">HIS/SAA</a></li>
                             <li role="presentation"><a href="#seccion6" aria-controls="" data-toggle="tab" role="tab">Resultado de Test</a></li>
                         </ul>
-                </div>
-              </div>
-            </div>
 
+                        <div class="tab-content">
+   
+  	<div role="tabpanel" class="tab-pane" id="seccion1">
+                        <form id="form" class="user1">
+                            <div class="form-group">
+                                <br><h1 class="h4 text-gray-900 mb-4">Datos del Paciente</h1>
+                                <br>
+                                <div class="form-group row">
+                                  
+                                    <div class="col-sm-4">
+                                    <label for="inputsm">Ci</label>
+                                        <input type="text" class="form-control input-lg" name="cedula" id="numerodecedula" placeholder="4646416">
+                                    </div>
+
+                                    <div class="col-sm-8">
+                                    <label for="inputsm">Nombre Completo</label>
+                                        <input type="text" class="form-control input-lg" name="nombre" id="nombrecompleto1" placeholder="NESTOR ANDRES MEDINA CASTILLO">
+                                    </div>
+
+                                </div> 
+
+                                <div class="form-group row">
+                                  
+                                  <div class="col-sm-4">
+                                  <label for="inputsm">Sexo</label>
+                                      <input type="text" class="form-control input-lg" name="cedula" id="numerodecedula" placeholder="">
+                                  </div>
+
+                                  <div class="col-sm-4">
+                                  <label for="inputsm">Fecha de Nacimiento</label>
+                                      <input type="text" class="form-control input-lg" name="nombre" id="nombrecompleto" placeholder="">
+                                  </div>
+
+                                  <div class="col-sm-4">
+                                  <label for="inputsm">Edad</label>
+                                      <input type="text" class="form-control input-lg" name="nombre" id="nombrecompleto" placeholder="">
+                                  </div>
+
+                                </div> 
+
+                                <div class="form-group row">
+                                  
+                                  <div class="col-sm-4">
+                                  <label for="inputsm">Departamento</label>
+                                      <input type="text" class="form-control input-lg" name="cedula" id="numerodecedula" placeholder="">
+                                  </div>
+
+                                  <div class="col-sm-4">
+                                  <label for="inputsm">Distrito</label>
+                                      <input type="text" class="form-control input-lg" name="nombre" id="nombrecompleto" placeholder="">
+                                  </div>
+
+                                  <div class="col-sm-4">
+                                  <label for="inputsm">Email</label>
+                                      <input type="text" class="form-control input-lg" name="nombre" id="nombrecompleto" placeholder="">
+                                  </div>
+
+                                </div> 
+
+                                <div class="form-group row">
+                                  
+                                  <div class="col-sm-4">
+                                  <label for="inputsm">Telefono 1</label>
+                                      <input type="text" class="form-control input-lg" name="cedula" id="numerodecedula" placeholder="">
+                                  </div>
+
+                                  <div class="col-sm-4">
+                                  <label for="inputsm">Telefono 2</label>
+                                      <input type="text" class="form-control input-lg" name="nombre" id="nombrecompleto" placeholder="">
+                                  </div>
+
+                                  <div class="col-sm-4">
+                                  <label for="inputsm">Telefono 3</label>
+                                      <input type="text" class="form-control input-lg" name="nombre" id="nombrecompleto" placeholder="">
+                                  </div>
+
+                                </div> 
+
+
+                                <br>
+                                <br>
+                                 
+                            </div>                     
+                        </form>
+    
+  	</div> 
+    
+    <div role="tabpanel" class="tab-pane" id="seccion2">
+                        <form id="form" class="user">
+                            <div class="form-group">
+                                <br><h1 class="h4 text-gray-900 mb-4">Listado de Llamadas</h1>
+                                <br>
+
+                                <div class="form-group row">
+                                  
+                                  <div class="col-sm-4">
+                                  <label for="inputsm">Id de Llamadas</label>
+                                      <input type="text" class="form-control input-lg" name="cedula" id="numerodecedula" placeholder="">
+                                  </div>
+
+                                  <div class="col-sm-4">
+                                  <label for="inputsm">Fecha de Regitro</label>
+                                      <input type="text" class="form-control input-lg" name="nombre" id="nombrecompleto" placeholder="">
+                                  </div>
+
+                                  <div class="col-sm-4">
+                                  <label for="inputsm">Fecha de Contancia</label>
+                                      <input type="text" class="form-control input-lg" name="nombre" id="nombrecompleto" placeholder="">
+                                  </div>
+
+                                </div> 
+
+                                <div class="form-group row">
+                                  
+                                  <div class="col-sm-1">
+                                  <label for="inputsm">Viajero</label>
+                                      <input type="text" class="form-control input-lg" name="cedula" id="numerodecedula" placeholder="">
+                                  </div>
+
+                                  <div class="col-sm-3">
+                                  <label for="inputsm">Contacto con COVID19</label>
+                                      <input type="text" class="form-control input-lg" name="nombre" id="nombrecompleto" placeholder="">
+                                  </div>
+
+                                  <div class="col-sm-2">
+                                  <label for="inputsm">Fiebre</label>
+                                      <input type="text" class="form-control input-lg" name="nombre" id="nombrecompleto" placeholder="">
+                                  </div>
+
+                                  <div class="col-sm-2">
+                                  <label for="inputsm">Dolor de Garganta</label>
+                                      <input type="text" class="form-control input-lg" name="nombre" id="nombrecompleto" placeholder="">
+                                  </div>
+
+                                  <div class="col-sm-1">
+                                  <label for="inputsm">Tos</label>
+                                      <input type="text" class="form-control input-lg" name="nombre" id="nombrecompleto" placeholder="">
+                                  </div>
+
+                                  <div class="col-sm-3">
+                                  <label for="inputsm">Dificultad al Respirar</label>
+                                      <input type="text" class="form-control input-lg" name="nombre" id="nombrecompleto" placeholder="">
+                                  </div>
+
+                                </div> 
+
+                                <div class="form-group row">
+                                  
+                                  <div class="col-sm-3">
+                                  <label for="inputsm">Requiere cert. de Aislamiento</label>
+                                      <input type="text" class="form-control input-lg" name="cedula" id="numerodecedula" placeholder="">
+                                  </div>
+
+                                  <div class="col-sm-9">
+                                  <label for="inputsm">Comentarios</label>
+                                      <input type="text" class="form-control input-lg" name="nombre" id="nombrecompleto" placeholder="">
+                                  </div>
+
+                                </div> 
+
+
+                                <br>
+                               
+                                 
+                            </div>                     
+                        </form>
+
+                        <hr class="sidebar-divider">
+
+                        <form id="form" class="user">
+                            <div class="form-group">
+                                <h1 class="h4 text-gray-900 mb-4">Datos de Agendamientos </h1>
+                               <br>
+                                <div class="form-group row">
+                                  
+                                  <div class="col-sm-4">
+                                  <label for="inputsm">Id de Agendamiento</label>
+                                      <input type="text" class="form-control input-lg" name="cedula" id="numerodecedula" placeholder=" ">
+                                  </div>
+
+                                  <div class="col-sm-4">
+                                  <label for="inputsm">Turno Agendado</label>
+                                      <input type="text" class="form-control input-lg" name="nombre" id="nombrecompleto" placeholder="">
+                                  </div>
+
+                                  <div class="col-sm-4">
+                                  <label for="inputsm">Horario</label>
+                                      <input type="text" class="form-control input-lg" name="nombre" id="nombrecompleto" placeholder="">
+                                  </div>
+
+                                </div>
+
+                                <div class="form-group row">
+                                  
+                                  <div class="col-sm-4">
+                                  <label for="inputsm">Sitio</label>
+                                      <input type="text" class="form-control input-lg" name="cedula" id="numerodecedula" placeholder="">
+                                  </div>
+
+                                  <div class="col-sm-4">
+                                  <label for="inputsm">Test 1</label>
+                                      <input type="text" class="form-control input-lg" name="nombre" id="nombrecompleto" placeholder="">
+                                  </div>
+
+                                  
+                                </div>
+                                
+                            </div>
+                        </form>
+    
+  	</div> 
+    
+    <div role="tabpanel" class="tab-pane active" id="seccion3">
+    <form id="form" class="user">
+                            <div class="form-group">
+                               <br> <h1 class="h4 text-gray-900 mb-4">Reportes de salud </h1>
+                               
+                                <div class="form-group row">
+                                  
+                                  <div class="col-sm-4">
+                                  <label for="inputsm">Id de Agendamiento</label>
+                                      <input type="text" class="form-control input-lg" name="cedula" id="numerodecedula" placeholder="347 ">
+                                  </div>
+
+                                  <div class="col-sm-4">
+                                  <label for="inputsm">Turno Agendado</label>
+                                      <input type="text" class="form-control input-lg" name="nombre" id="nombrecompleto" placeholder="">
+                                  </div>
+
+                                  <div class="col-sm-4">
+                                  <label for="inputsm">Horario</label>
+                                      <input type="text" class="form-control input-lg" name="nombre" id="nombrecompleto" placeholder="-25.35710906982422">
+                                  </div>
+                                   
+                                </div> <br>
+                                <h1 class="h4 text-gray-900 mb-4">Sintomas </h1>
+                                <div class="form-group row">
+                                  
+                                  <div class="col-sm-4">
+                                  <label for="inputsm">Fiebre</label>
+                                      <input type="text" class="form-control input-lg" name="cedula" id="numerodecedula" placeholder="">
+                                  </div>
+
+                                  <div class="col-sm-4">
+                                  <label for="inputsm">Medicion</label>
+                                      <input type="text" class="form-control input-lg" name="nombre" id="nombrecompleto" placeholder="">
+                                  </div>                            
+                                </div>
+
+                                <div class="form-group row">
+                                  
+                                  <div class="col-sm-4">
+                                  <label for="inputsm">Tos</label>
+                                      <input type="text" class="form-control input-lg" name="cedula" id="numerodecedula" placeholder=" ">
+                                  </div>
+
+                                  <div class="col-sm-4">
+                                  <label for="inputsm">Dificultad al Respirar</label>
+                                      <input type="text" class="form-control input-lg" name="nombre" id="nombrecompleto" placeholder="">
+                                  </div>
+
+                                  <div class="col-sm-4">
+                                  <label for="inputsm">Dolor de Garganta</label>
+                                      <input type="text" class="form-control input-lg" name="nombre" id="nombrecompleto" placeholder="">
+                                  </div>
+                                   
+                                </div>
+                                
+                                <div class="form-group row">
+                                  
+                                  <div class="col-sm-4">
+                                  <label for="inputsm">Cansancio al Caminar</label>
+                                      <input type="text" class="form-control input-lg" name="cedula" id="numerodecedula" placeholder=" ">
+                                  </div>
+
+                                  <div class="col-sm-4">
+                                  <label for="inputsm">Falta de aire</label>
+                                      <input type="text" class="form-control input-lg" name="nombre" id="nombrecompleto" placeholder="">
+                                  </div>
+
+                                  <div class="col-sm-4">
+                                  <label for="inputsm">Rinorrea</label>
+                                      <input type="text" class="form-control input-lg" name="nombre" id="nombrecompleto" placeholder="">
+                                  </div>
+                                   
+                                </div>
+
+                                <div class="form-group row">
+                                  
+                                  <div class="col-sm-3">
+                                  <label for="inputsm">Congestion Nasal</label>
+                                      <input type="text" class="form-control input-lg" name="cedula" id="numerodecedula" placeholder=" ">
+                                  </div>
+
+                                  <div class="col-sm-3">
+                                  <label for="inputsm">Diarrea</label>
+                                      <input type="text" class="form-control input-lg" name="nombre" id="nombrecompleto" placeholder="">
+                                  </div>
+
+                                  <div class="col-sm-6">
+                                  <label for="inputsm">Otros Sintomas</label>
+                                      <input type="text" class="form-control input-lg" name="nombre" id="nombrecompleto" placeholder="">
+                                  </div>
+                                   
+                                </div>
+
+
+                            </div>
+                        </form>
+    </div> 
+    
+    <div role="tabpanel" class="tab-pane" id="seccion4">
+                        <form id="form" class="user">
+                            <div class="form-group">
+                                <br><h1 class="h4 text-gray-900 mb-4">Datos de la Ultima ubicacion Registrada</h1>
+                                <input type="hidden" id="latitud" name="latitud" value="-25.35710906982422">
+                                <input type="hidden" id="longitud" name="longitud" value="-57.614601135253906">
+                                 <div id="map" style="position: relative; overflow: hidden;"><div style="height: 100%; width: 100%; position: absolute; top: 0px; left: 0px; background-color: rgb(229, 227, 223);"><div style="overflow: hidden;"></div><div class="gm-style" style="position: absolute; z-index: 0; left: 0px; top: 0px; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px;"><div tabindex="0" style="position: absolute; z-index: 0; left: 0px; top: 0px; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; cursor: url(&quot;https://maps.gstatic.com/mapfiles/openhand_8_8.cur&quot;), default; touch-action: pan-x pan-y;"><div style="z-index: 1; position: absolute; left: 50%; top: 50%; width: 100%; transform: translate(0px, 0px);"><div style="position: absolute; left: 0px; top: 0px; z-index: 100; width: 100%;"><div style="position: absolute; left: 0px; top: 0px; z-index: 0;"><div style="position: absolute; z-index: 978; transform: matrix(1, 0, 0, 1, -210, -65);"><div style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px;"><div style="width: 256px; height: 256px;"></div></div></div></div></div><div style="position: absolute; left: 0px; top: 0px; z-index: 101; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 102; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 103; width: 100%;"><div style="position: absolute; left: 0px; top: 0px; z-index: -1;"><div style="position: absolute; z-index: 978; transform: matrix(1, 0, 0, 1, -210, -65);"><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 0px; top: 0px;"></div></div></div><div style="width: 27px; height: 43px; overflow: hidden; position: absolute; left: -14px; top: -43px; z-index: 0;"><img alt="" src="https://maps.gstatic.com/mapfiles/api-3/images/spotlight-poi2.png" draggable="false" style="position: absolute; left: 0px; top: 0px; width: 27px; height: 43px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div></div><div style="position: absolute; left: 0px; top: 0px; z-index: 0;"></div></div><div class="gm-style-pbc" style="z-index: 2; position: absolute; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; left: 0px; top: 0px; opacity: 0;"><p class="gm-style-pbt"></p></div><div style="z-index: 3; position: absolute; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; left: 0px; top: 0px; touch-action: pan-x pan-y;"><div style="z-index: 4; position: absolute; left: 50%; top: 50%; width: 100%; transform: translate(0px, 0px);"><div style="position: absolute; left: 0px; top: 0px; z-index: 104; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 105; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 106; width: 100%;"><div style="width: 27px; height: 43px; overflow: hidden; position: absolute; opacity: 0; left: -14px; top: -43px; z-index: 0;"><img alt="" src="https://maps.gstatic.com/mapfiles/api-3/images/spotlight-poi2.png" draggable="false" usemap="#gmimap0" style="position: absolute; left: 0px; top: 0px; width: 27px; height: 43px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"><map name="gmimap0" id="gmimap0"><area log="miw" coords="13.5,0,4,3.75,0,13.5,13.5,43,27,13.5,23,3.75" shape="poly" title="" style="cursor: pointer; touch-action: none;"></map></div></div><div style="position: absolute; left: 0px; top: 0px; z-index: 107; width: 100%;"></div></div></div></div><iframe aria-hidden="true" frameborder="0" tabindex="-1" style="z-index: -1; position: absolute; width: 100%; height: 100%; top: 0px; left: 0px; border: none;"></iframe></div></div></div>
+
+
+                            </div>                     
+                        </form>
+    </div>
+    
+    <div role="tabpanel" class="tab-pane" id="seccion5">
+                        <form id="form" class="user">
+                            <div class="form-group">
+                                <br><h1 class="h4 text-gray-900 mb-4">Datos del La DB HIS</h1>
+                                <div class="form-group row">
+                                    <div class="col-sm-4">
+                                        <input type="text" class="form-control form-control-user" name="cedula" id="numerodecedula" placeholder="N° de Cédula">
+                                    </div>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control form-control-user" name="nombre" id="nombrecompleto" placeholder="Nombre Completo">
+                                    </div>
+                                </div> 
+                                <div class="col-sm-4" style="padding-left:0px">
+                                        <input type="password" class="form-control form-control-user" name="password" id="password" placeholder="Password">
+                                </div>
+                                  <br>
+                                  <br>
+                                <div id="warning" style="display: none"><br>
+                                    <div class="alert alert-warning" role="alert">
+                                        <strong>Advertencia!</strong> <span id="warning_message"></span>
+                                    </div>
+                                </div> 
+                            </div>                     
+                        </form>
+    </div>
+    
+    <div role="tabpanel" class="tab-pane" id="seccion6">
+    <form id="form" class="user">
+                            <div class="form-group">
+                               <br> <h1 class="h4 text-gray-900 mb-4">Datos de Resultados </h1>
+                               <br>
+                                <div class="form-group row">
+                                  
+                                  <div class="col-sm-4">
+                                  <label for="inputsm">Hospitalizacion</label>
+                                      <input type="text" class="form-control input-lg" name="cedula" id="numerodecedula" placeholder="SD ">
+                                  </div>
+
+                                  <div class="col-sm-4">
+                                  <label for="inputsm">Fallecido</label>
+                                      <input type="text" class="form-control input-lg" name="nombre" id="nombrecompleto" placeholder="SD">
+                                  </div>
+
+                                  <div class="col-sm-4">
+                                  <label for="inputsm">Nro. de Muestra</label>
+                                      <input type="text" class="form-control input-lg" name="nombre" id="nombrecompleto" placeholder="0">
+                                  </div>
+
+                                </div>
+
+                                <div class="form-group row">
+                                  
+                                  <div class="col-sm-4">
+                                  <label for="inputsm">Fecha de Toma</label>
+                                      <input type="text" class="form-control input-lg" name="cedula" id="numerodecedula" placeholder="10/04/2020">
+                                  </div>
+
+                                  <div class="col-sm-4">
+                                  <label for="inputsm">Lugar de la Toma</label>
+                                      <input type="text" class="form-control input-lg" name="nombre" id="nombrecompleto" placeholder="COSTANERA">
+                                  </div>
+                                  <div class="col-sm-4">
+                                  <label for="inputsm">Resultado</label>
+                                      <input type="text" class="form-control input-lg" name="nombre" id="nombrecompleto" placeholder="DISPONIBLE">
+                                  </div>
+
+                                  
+                                </div>
+                                
+                            </div>
+                        </form>
+  	</div>
+    
+</div>
+                       
+                             
+               
+            
+       
+    
+
+
+ 
+ 
+<!-- hasta aqui corresponde a la carga  -->
+
+
+        <!-- Footer -->
         
-          </div>
-
-         
-
-        </div>
-        <!-- /.container-fluid -->
-
+      </div>  
       </div>
-      <!-- End of Main Content -->
-
-      <!-- Footer -->
-      <footer class="sticky-footer bg-white">
-        <div class="container my-auto">
-          <div class="copyright text-center my-auto">
-            <span>Copyright &copy; Your Website 2019</span>
-          </div>
+      </div>
+      </div>
+      </div>
         </div>
-      </footer>
-      <!-- End of Footer -->
-
+        <!-- End of Footer -->
     </div>
     <!-- End of Content Wrapper -->
-
-  </div>
-  <!-- End of Page Wrapper -->
-
-  <!-- Scroll to Top Button-->
-  <a class="scroll-to-top rounded" href="#page-top">
+</div>
+<!-- End of Page Wrapper -->
+<!-- Scroll to Top Button-->
+<a class="scroll-to-top rounded" href="#page-top" style="display: inline;">
     <i class="fas fa-angle-up"></i>
-  </a>
+</a>
 
-  <!-- Logout Modal-->
-  <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
-          <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">×</span>
-          </button>
-        </div>
-        <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
-        <div class="modal-footer">
-          <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-          <a class="btn btn-dark" href="login.html">Logout</a>
-        </div>
-      </div>
+<!-- Bootstrap core JavaScript-->
+<script src="./public/vendor/jquery/jquery.min.js"></script>
+<script src="./public/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- Core plugin JavaScript-->
+<script src="./public/vendor/jquery-easing/jquery.easing.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.min.js"></script>
+<!-- Custom scripts for all pages-->
+<script src="./public/js/sb-admin-2.min.js"></script>
+<!-- Page level plugins -->
+<script src="./public/vendor/datatables/jquery.dataTables.min.js"></script>
+<script src="./public/vendor/datatables/dataTables.bootstrap4.min.js"></script>
+<!-- Page level custom scripts -->
+<script src="./public/js/demo/datatables-demo.js"></script>
+<script type="text/javascript" src="./public/jstimezonedetect/jstz.min.js"></script>
+<script type="text/javascript" src="./public/bootstrap-calendar/js/language/es-ES.js"></script>
+<script type="text/javascript" src="./public/bootstrap-calendar/js/calendar.js"></script>
+<script type="text/javascript" src="./public/bootstrap-calendar/js/app.js"></script>
+<script type="text/javascript" src="./public/moment/moment.min.js"></script>
+<script type="text/javascript" src="./public/moment/locale/es.js"></script>
+<script type="text/javascript" src="./public/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"></script>  
+
+
+<script src="js/callcenter.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBk2RdAJBlD3GY1dC06aDcpE94Vns_qgGQ&amp;callback=iniciarMap"></script>
     </div>
-  </div>
-
-  <!-- Bootstrap core JavaScript-->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Core plugin JavaScript-->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-  <!-- Custom scripts for all pages-->
-  <script src="js/sb-admin-2.min.js"></script>
-
-  <!-- Page level plugins -->
-  <script src="vendor/chart.js/Chart.min.js"></script>
-
-  <!-- Page level custom scripts -->
-  <script src="js/demo/chart-area-demo.js"></script>
-  <script src="js/demo/chart-pie-demo.js"></script>
-
 </body>
-
 </html>
